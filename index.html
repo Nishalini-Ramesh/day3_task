@@ -2,52 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Simple Profile Page</title>
+  <title>Nishalini's Biodata</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 40px;
     }
 
-    .profile {
-      max-width: 300px;
+    .container {
+      max-width: 700px;
       margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
     }
 
-    .profile img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%; /* Makes image circular */
-      border: 4px solid #4CAF50; /* Colored border */
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #4CAF50;
+      margin-bottom: 20px;
     }
 
-    .name {
-      font-size: 22px;
+    .biodata {
+      text-align: left;
+      padding: 0 20px;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .biodata span {
       font-weight: bold;
-      margin-top: 10px;
+      color: #333;
     }
 
-    .description {
-      font-family: 'Georgia', serif; /* Custom font */
-      font-size: 16px;
-      color: #555;
-    }
-
-    @media (max-width: 600px) {
-      .profile img {
-        width: 100px;
-        height: 100px;
-      }
+    h1 {
+      color: #2c3e50;
     }
   </style>
 </head>
 <body>
 
-  <div class="profile">
-    <img src="https://via.placeholder.com/150" alt="Profile">
-    <div class="name">Nishalini</div>
-    <div class="description">Learning CSS to build responsive web pages using styles and layouts.</div>
+  <div class="container">
+    <img class="profile-img" src="profile.jpg" alt="Profile Picture">
+    <h1>Nishalini Ramesh</h1>
+
+    <div class="biodata">
+      <p><span>Name:</span> Nishalini</p>
+      <p><span>Age:</span> 18</p>
+      <p><span>Schooling:</span> Completed at Tiruvannamalai</p>
+      <p><span>Currently Studying:</span> B.E. (CSE)</p>
+      <p><span>College:</span> Saveetha Engineering College</p>
+    </div>
   </div>
 
 </body>
